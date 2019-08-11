@@ -9,7 +9,6 @@ class PostsController < ApplicationController
 
   def update
     @post.assign_attributes(post_params)
-    binding.pry
 
     if @post.valid?
        @post.save
